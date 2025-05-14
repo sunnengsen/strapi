@@ -7,4 +7,6 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
+  // 👇 Add this section
+  allowedHosts: ['roth.sunneng.me', 'localhost', '127.0.0.1'],
 });
